@@ -1,9 +1,8 @@
 # Addition Using Django
 ##	django installation steps
 > First create a virtual enviornment to install Django 
-    ###Installing pip globally
-    
-    ### Install Django using `pip install django`
+    * Installing pip globally
+    * Install Django using `pip install django`
 ## 	addition  project
     - Create a new project in Django
 ##	description of project
