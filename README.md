@@ -14,13 +14,17 @@
 * You can verify Django installation by typing: <br/>
 `anurag@anurag:~$ django-admin --version`
 
-## description of project
+## Description of project
 * We are creating a sample web page for addition of two numbers using Django
 * Django: Django is a free and open-source web framework, written in Python, which follows the **model-view-template** architectural pattern.
 * The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
-![Basic Django Diagram](https://mdn.mozillademos.org/files/13931/basic-django.png)
-### flow of a Django project
+
+![Basic Django Diagram](https://mdn.mozillademos.org/files/13931/basic-django.png)<br/>
+
+
+### flow of a Django project <br/>
 ![Basic Djang Flow Diagram](https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
+<br/>
 ## Addition  project
 
 
