@@ -16,6 +16,10 @@
 ##    description of project
     - We are creating a sample web page for addition of two numbers using Django
     - The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
+    -##	flow of project
+<a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
+<br/>
+![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
 
 ## Addition  project
 * Creating a sample django project named _addition_ we use following command
@@ -139,11 +143,7 @@ urlpatterns = [
 ```
 This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-##	flow of project
-![Django Flow] (https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
-<a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
-<br/>
-![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
+
 ##	references links
 [Django Urls](https://tutorial.djangogirls.org/en/django_urls/)
 [Django Views](https://docs.djangoproject.com/en/1.10/intro/tutorial03/)
