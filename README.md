@@ -15,7 +15,7 @@
 `django-admin --version`
 * Creating a sample django project named _addition_ we use following command
 `django-admin startproject addition`
-This command will create directory named addition 
+This command will create directory named addition  <br/>
 `addition
 ├───manage.py
 └───addition
