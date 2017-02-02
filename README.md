@@ -1,7 +1,18 @@
 # Addition Using Django
 ##	django installation steps
-* Installing pip globally
-* Install Django using `pip install django`
+* Installing pip globally on Ubuntu 
+* Django Installation using PIP
+* pip is a package management system used to install and manage software packages written in Python.
+* For python version 2.7.X use
+`sudo apt-get install python-pip`
+* For python version 3.X use
+`sudo apt-get install python3-pip`
+* Once you have installed pip on your system you are ready to install Django on your system.
+* Pip will install the latest version available in pip repository
+* Python 2.7.X   `sudo pip install django`
+* Python 3.X     `sudo pip3 install django`
+* You can verify Django installation by typing:
+`django-admin --version`
 
 
 ## 	addition  project
