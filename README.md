@@ -14,7 +14,9 @@
 * You can verify Django installation by typing:
 `django-admin --version`
 
-
+##  models
+##  views
+##  urls
 ## 	addition  project
     - Create a new project in Django
 ##	description of project
