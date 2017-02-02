@@ -140,7 +140,8 @@ urlpatterns = [
 This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ##	flow of project
-![Django Flow] (https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png =250x250)
+![Django Flow] (https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
+<a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="http://url.to/image.png" align="left" height="250" width="250" ></a>
 <br/>
 ![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
 ##	references links
