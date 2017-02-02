@@ -19,7 +19,7 @@
 * Django: Django is a free and open-source web framework, written in Python, which follows the **model-view-template** architectural pattern.
 * The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
  <a href="https://mdn.mozillademos.org/files/13931/basic-django.png"><img src="https://mdn.mozillademos.org/files/13931/basic-django.png"></a>
-<br/>
+<br>
 ### flow of a Django project
 <a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
 
