@@ -22,14 +22,14 @@
 ![Basic Django Diagram](https://mdn.mozillademos.org/files/13931/basic-django.png)<br/>
 
 
-### flow of a Django project <br/>
+### Flow of a Django project <br/>
 ![Basic Djang Flow Diagram](https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
 <br/>
 ## Addition  project
 
 
 
-### Creating a Django Project
+### Creating a Django Project<br/>
 `anurag@anurag:~$ django-admin startproject addition`
 This command will create directory named addition 
 ```
@@ -53,7 +53,7 @@ addition
 
 
 #  Starting a web server
-To start a web server you need to be in the project directory and run the following command
+To start a web server you need to be in the project directory and run the following command <br/>
 `anurag@anurag:~/addition$ python manage.py runserver 0.0.0.0:8080`
 You will get the following message 
 ```
@@ -65,7 +65,7 @@ Quit the server with CONTROL-C.
 Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:<br/>
 [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-##  views
+##  Views <br/>
 A view is a “type” of Web page in your Django application that generally serves a specific function and has a specific template.
 A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
  In django views are created in `views.py` file.
@@ -77,7 +77,7 @@ A view function, or “view” for short, is simply a Python function that takes
     b = 19
     return render(request, "hello.html", {"today": a + b})
  ```
- ##   templates<br/>
+ ##   Templates<br/>
  All of your html files will be in `template`.
  You need to create your own template directory by <br/>
  `anurag@anurag:~/addition$ mkdir template`
@@ -136,7 +136,7 @@ TEMPLATES = [
 
 </html>
 ```
-##  urls
+##  Urls
 We want to access that view via a URL, first we need to associate that view with URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
 Which looks like this:<br/>
 ```python
@@ -146,8 +146,30 @@ urlpatterns = [
 ]
 ```
 This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+## Models
+* A model is a class that represents table or collection in our DB, and where every attribute of the class is a field of the table or collection. Models are defined in the app/models.py (in our example: addition/models.py)
+```python
+from django.db import models
 
 
+class Numbers(models.Model):
+    number1 = models.IntegerField()
+    number2 = models.IntegerField()
+
+    def __unicode__(self):
+        return self.number1 + self.number2
+```
+Our class has 2 attribute `number1` and `number2` which are IntegerField, those will be the table fields.
+### Creating forms using models
+```python
+class Numbers(forms.Form):
+    class Meta:
+        model = models.Numbers
+        fields = ['number1', 'number2']
+
+    number1 = forms.IntegerField()
+    number2 = forms.IntegerField()
+```
 ##	references links
 [Django Urls](https://tutorial.djangogirls.org/en/django_urls/)
 [Django Views](https://docs.djangoproject.com/en/1.10/intro/tutorial03/)
