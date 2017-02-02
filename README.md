@@ -145,6 +145,9 @@ urlpatterns = [
     url(r'^add/', addition, name = 'add'), 
 ]
 ```
+* Now that you have added a url for view `addition` you can access it at this url 
+http://127.0.0.1:8000/add
+
 This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 ## Models
 * A model is a class that represents table or collection in our DB, and where every attribute of the class is a field of the table or collection. Models are defined in the app/models.py (in our example: addition/models.py)
