@@ -137,16 +137,18 @@ TEMPLATES = [
 </html>
 ```
 ##  Urls
-We want to access that view via a URL, first we need to associate that view with URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
+We want to access a view via a URL, first we need to associate that view with URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
+First we need to import views `hello` from our views.py file
 Which looks like this:<br/>
 ```python
+from views import addition,hello
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^add/', addition, name = 'add'), 
+    url(r'^', hello, name = 'hello'),
 ]
 ```
 * Now that you have added a url for view `addition` you can access it at this url 
-http://127.0.0.1:8000/add
+http://127.0.0.1:8000/hello
 
 This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 ## Models
