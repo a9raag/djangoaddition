@@ -141,7 +141,7 @@ This line means that for every URL that starts with admin/, Django will find a c
 
 ##	flow of project
 ![Django Flow] (https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
-<a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="250" width="250" ></a>
+<a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
 <br/>
 ![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
 ##	references links
