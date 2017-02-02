@@ -9,8 +9,8 @@
 `sudo apt-get install python3-pip`
 * Once you have installed pip on your system you are ready to install Django on your system.
 * Pip will install the latest version available in pip repository
-* Python 2.7.X   `sudo pip install django`
-* Python 3.X     `sudo pip3 install django`
+* Python 2.7.X   <br/>`sudo pip install django`
+* Python 3.X     <br/>`sudo pip3 install django`
 * You can verify Django installation by typing: <br/>
 `django-admin --version`
 * Creating a sample django project named _addition_ we use following command
