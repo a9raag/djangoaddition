@@ -15,14 +15,15 @@
 `anurag@anurag:~$ django-admin --version`
 
 ## description of project
-    * We are creating a sample web page for addition of two numbers using Django
-    * Django: Django is a free and open-source web framework, written in Python, which follows the **model-view-template** architectural pattern.
-    * The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
+* We are creating a sample web page for addition of two numbers using Django
+* Django: Django is a free and open-source web framework, written in Python, which follows the **model-view-template** architectural pattern.
+* The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
+![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
     
 ### flow o project
 <a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
 <br/>
-![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
+
 
 ## Addition  project
 * Creating a sample django project named _addition_ we use following command
