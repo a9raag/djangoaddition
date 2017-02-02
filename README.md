@@ -28,7 +28,7 @@ addition
 ```
 #  Starting a web server
 To start a web server you need to be in the project directory and run the following command
-`anurag@anurag:~/addition/python manage.py runserver 0.0.0.0:8080`
+`anurag@anurag:~/addition$ python manage.py runserver 0.0.0.0:8080`
 You will get the following message 
 ```
 February 02, 2017 - 03:00:35
@@ -43,8 +43,32 @@ Now all you need to do is check that your website is running. Open your browser 
 A view is a “type” of Web page in your Django application that generally serves a specific function and has a specific template.
 A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
  In django views are created in `views.py` file.
+ ```python
+ from django.shortcuts import render
+ def hello(request):
+    today = datetime.datetime.now().date()
+    a = 10
+    b = 19
+    return render(request, "hello.html", {"today": a + b})
+ ```
+ ## templates
+ All of your html files will be in `template`.
+ You need to create your own template directory by <br/>
+ `anurag@anurag:~/addition$ mkdir template`
+ Now we have to edit our `settings.py` file so python knows where all of our html files reside.
+ 
+ And our `hello.html` file looks like this 
+ ```
+ <html>
+
+   <body>
+      Hello World!!!<p>Today is {{today}}</p>
+   </body>
+
+</html>
+```
 ##  urls
-We want to access that view via a URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
+We want to access that view via a URL, first we need to associate that view with URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
 Which looks like this:<br/>
 ```python
 urlpatterns = [
