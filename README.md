@@ -51,12 +51,55 @@ A view function, or “view” for short, is simply a Python function that takes
     b = 19
     return render(request, "hello.html", {"today": a + b})
  ```
- ## templates
+ ##   templates<br/>
  All of your html files will be in `template`.
  You need to create your own template directory by <br/>
  `anurag@anurag:~/addition$ mkdir template`
- Now we have to edit our `settings.py` file so python knows where all of our html files reside.
+ ```
+ addition 
+├───manage.py
+└───template
+        hello.html
+```
+ Now we have to edit our `settings.py` file, so that python knows where all of our html files reside.<br/>
+ In `settings.py`, search for  `TEMPLATES` which looks like this 
  
+ ```python
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [''], 
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
+
+Change it to 
+```python
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['template'], # <- name of our template directory
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
  And our `hello.html` file looks like this 
  ```
  <html>
