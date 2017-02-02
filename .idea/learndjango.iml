@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/include/python2.7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/addition" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plagiarism" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

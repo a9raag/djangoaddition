@@ -13,10 +13,8 @@ def hello(request):
 
 def addition(request):
     if request.method == "POST":
-        form = Numbers(request.POST )
-        add = int(form.data.get('number2'))+int(form.data.get('number1'))
-        add_str="Addition of two numbers is {}".format(add)
-        return render(request, "addition.html", {"form": form, "addition":add_str})
-    return render(request,"addition.html",{"form":Numbers()})
-
-
+        form = Numbers(request.POST)
+        add = int(form.data.get('number2')) + int(form.data.get('number1'))
+        add_str = "Addition of two numbers is {}".format(add)
+        return render(request, "addition.html", {"form": form, "addition": add_str})
+    return render(request, "addition.html", {"form": Numbers()})
