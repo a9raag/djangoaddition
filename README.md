@@ -13,8 +13,15 @@
 * Python 3.X     <br/>`sudo pip3 install django`
 * You can verify Django installation by typing: <br/>
 `anurag@anurag:~$ django-admin --version`
+##    description of project
+    - We are creating a sample web page for addition of two numbers using Django
+    - The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
+
 ## Addition  project
 * Creating a sample django project named _addition_ we use following command
+* Django: Django is a free and open-source web framework, written in Python, which follows the **model-view-template** architectural pattern.
+
+# Creating a Django Project
 `anurag@anurag:~$ django-admin startproject addition`
 This command will create directory named addition 
 ```
@@ -26,6 +33,17 @@ addition
         wsgi.py
         __init__.py
 ```
+
+* __init__.py − Just to make sure python handles this folder as a package.
+
+* admin.py − This file helps you make the app modifiable in the admin interface.
+
+* models.py − This is where all the application models are stored.
+
+
+* views.py − This is where your application views are.
+
+
 #  Starting a web server
 To start a web server you need to be in the project directory and run the following command
 `anurag@anurag:~/addition$ python manage.py runserver 0.0.0.0:8080`
@@ -120,11 +138,9 @@ urlpatterns = [
 ]
 ```
 This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
-##	description of project
-    - In this project we are creating a sample web page for addition of two numbers
-    - It will have a 
+
 ##	flow of project
-![Django Flow] (https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
+![Django Flow] (https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png =250x250)
 <br/>
 ![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
 ##	references links
