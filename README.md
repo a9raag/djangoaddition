@@ -54,7 +54,7 @@ addition
 
 #  Starting a web server
 To start a web server you need to be in the project directory and run the following command <br/>
-`anurag@anurag:~/addition$ python manage.py runserver 0.0.0.0:8080`
+`anurag@anurag:~/addition$ python manage.py runserver 0.0.0.0:8000`
 You will get the following message 
 ```
 February 02, 2017 - 03:00:35
@@ -69,16 +69,19 @@ Now all you need to do is check that your website is running. Open your browser 
 A view is a “type” of Web page in your Django application that generally serves a specific function and has a specific template.
 A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
  In django views are created in `views.py` file.
+ Here, we have defined a view `hello`
+ In in function `hello(request)` we are additing two number 10 and 19  and rendering `hello.html` to display addition at
+ "http://127.0.0.1:8000/hello" we will get to this part in Urls section
  ```python
  from django.shortcuts import render
  def hello(request):
-    today = datetime.datetime.now().date()
     a = 10
     b = 19
-    return render(request, "hello.html", {"today": a + b})
+    return render(request, "hello.html", {"result": a + b})
  ```
+ 
  ##   Templates<br/>
- All of your html files will be in `template`.
+ All of your html files will be in `addition/template`.
  You need to create your own template directory by <br/>
  `anurag@anurag:~/addition$ mkdir template`
  ```
@@ -86,6 +89,16 @@ A view function, or “view” for short, is simply a Python function that takes
 ├───manage.py
 └───template
         hello.html
+```
+Now create a `hello.html` file template directory
+ ```
+ <html>
+
+   <body>
+      Hello World!!!<p>Addition of 10+19 is {{result}}</p>
+   </body>
+
+</html>
 ```
  Now we have to edit our `settings.py` file, so that python knows where all of our html files reside.<br/>
  In `settings.py`, search for  `TEMPLATES` which looks like this 
@@ -126,18 +139,9 @@ TEMPLATES = [
     },
 ]
 ```
- And our `hello.html` file looks like this 
- ```
- <html>
 
-   <body>
-      Hello World!!!<p>Today is {{today}}</p>
-   </body>
-
-</html>
-```
 ##  Urls
-We want to access a view via a URL, first we need to associate that view with URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
+We want to access our view `hello` via a URL, first we need to associate that view with a URL. Django has his own way for URL mapping and it's done by editing your project url.py file (addition/url.py). 
 First we need to import views `hello` from our views.py file
 Which looks like this:<br/>
 ```python
@@ -149,9 +153,11 @@ urlpatterns = [
 ```
 * Now that you have added a url for view `addition` you can access it at this url 
 http://127.0.0.1:8000/hello
-
-This line means that for every URL that starts with admin/, Django will find a corresponding view. In this case we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Restart the server using <br/>
+`anurag@anurag:~/addition$ python manage.py runserver 0.0.0.0:8000`
+`url(r'^', hello, name = 'hello')` This line means that for every URL that starts with hello/, Django will find a corresponding view.
 ## Models
+
 * A model is a class that represents table or collection in our DB, and where every attribute of the class is a field of the table or collection. Models are defined in the app/models.py (in our example: addition/models.py)
 ```python
 from django.db import models
