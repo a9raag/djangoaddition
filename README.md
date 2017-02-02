@@ -1,7 +1,7 @@
 # Addition Using Django
 ##	django installation steps
-*Installing pip globally
-*Install Django using `pip install django`
+* Installing pip globally
+* Install Django using `pip install django`
 ## 	addition  project
     - Create a new project in Django
 ##	description of project
