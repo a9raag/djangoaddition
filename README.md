@@ -12,7 +12,6 @@
 ##	flow of project
     ![]
     (Django-Template.png)
-    ![]
-    (https://mdn.mozillademos.org/files/13931/basic-django.png)
+    ![alt tag](https://mdn.mozillademos.org/files/13931/basic-django.png)
 ##	references links
 
