@@ -15,14 +15,17 @@
 `django-admin --version`
 * Creating a sample django project named _addition_ we use following command
 `django-admin startproject addition`
-This command will create directory named addition  <br/>
-`addition
+This command will create directory named addition 
+```
+addition 
 ├───manage.py
 └───addition
         settings.py
         urls.py
         wsgi.py
-        __init__.py`
+        __init__.py
+```
+
 ##  views
 A view is a “type” of Web page in your Django application that generally serves a specific function and has a specific template.
 A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
