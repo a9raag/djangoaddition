@@ -25,6 +25,18 @@ addition
         wsgi.py
         __init__.py
 ```
+# Starting a web server
+To start a web server you need to be in the project directory and run the following command
+`anurag@anurag:~/addition/python manage.py runserver 0.0.0.0:8080`
+You will get the following message 
+```
+February 02, 2017 - 03:00:35
+Django version 1.10.5, using settings 'sampleproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:<br/>
+[](http://127.0.0.1:8000)
 
 ##  views
 A view is a “type” of Web page in your Django application that generally serves a specific function and has a specific template.
