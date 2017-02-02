@@ -22,7 +22,9 @@
 <br/>
 ### flow of a Django project
 <a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
-<br/>
+
+
+<br>
 
 
 ## Addition  project
