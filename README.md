@@ -18,9 +18,10 @@
 * We are creating a sample web page for addition of two numbers using Django
 * Django: Django is a free and open-source web framework, written in Python, which follows the **model-view-template** architectural pattern.
 * The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
-![Basic Django Flow](https://mdn.mozillademos.org/files/13931/basic-django.png)
-    
-### flow o project
+![Basic Django Flow]()
+ <a href="https://mdn.mozillademos.org/files/13931/basic-django.png"><img src="https://mdn.mozillademos.org/files/13931/basic-django.png" align="right"></a>
+<br/>
+### flow of a Django project
 <a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png" align="left" height="512" width="512" ></a>
 <br/>
 
