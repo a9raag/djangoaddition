@@ -20,17 +20,12 @@
 * The developer provides the Model, the view and the template then just maps it to a URL and Django does the magic to serve it to the user
 ![Basic Django Diagram](https://mdn.mozillademos.org/files/13931/basic-django.png)
 ### flow of a Django project
-<a href="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"><img src="https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png"  height="512" width="512" ></a>
-
-
-<br>
-
-
+![Basic Djang Flow Diagram](https://github.com/a9raag/djangoaddition/blob/plagiarism/Django-Template.png)
 ## Addition  project
-* Creating a sample django project named _addition_ we use following command
 
 
-# Creating a Django Project
+
+### Creating a Django Project
 `anurag@anurag:~$ django-admin startproject addition`
 This command will create directory named addition 
 ```
